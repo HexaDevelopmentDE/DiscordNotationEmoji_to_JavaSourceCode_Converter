@@ -1,3 +1,8 @@
+/**
+ * @version 1.0.0
+ * @author Konstantin Koark
+ *
+ */
 
 public class ConvertUnicodeToJavaSourceCode {
 	/**

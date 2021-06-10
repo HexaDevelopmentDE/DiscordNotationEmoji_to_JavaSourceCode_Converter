@@ -11,6 +11,6 @@ public class ConvertUnicodeToJavaSourceCode {
 	 * @return
 	 */
 	public String convertToJava(String unicode){
-		return unicode.replace("U", "\\").replace("+", "u").replaceFirst("1", "");	
+		return unicode.replace("U", "\\").replace("+", "u").replaceFirst("1", "");
 	}
 }

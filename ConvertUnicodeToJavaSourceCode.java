@@ -11,13 +11,6 @@ public class ConvertUnicodeToJavaSourceCode {
 	 * @return
 	 */
 	public String convertToJava(String unicode){
-		String javaSourceCode = "\\u";
-
-		char[] uniArray = unicode.toCharArray();
-		for(int i = 3; i < uniArray.length; i++) {
-			javaSourceCode = javaSourceCode + uniArray[i];
-		}
-		
-		return javaSourceCode;
+		return unicode.replace("U", "\\").replace("+", "u").replaceFirst("1", "");	
 	}
 }
